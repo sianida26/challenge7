@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+      @apply whitespace-nowrap inline-flex items-center justify-center px-4 py-2 rounded-md shadow-sm text-base font-bold text-white bg-lime-4 hover:bg-lime-5 focus:ring-lime-4 focus:ring-2 focus:outline-none
+  }
+
+  .why-us-item {
+      @apply flex flex-col p-4 rounded-md border border-neutral-2 gap-4;
+  }
+}
+
+/* .figure {
+    @apply ;
+} */
+
+body {
+  font-family: Helvetica;
+}
+
+ul.list-check>li::before {
+  content: url('../assets/check.svg');
+  color: #0D28A6;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 1.5em;
+  background: #CFD4ED;
+  padding-left: 4px;
+  padding-top: 4px;
+  border-radius: 50%;
+  margin-right: 0.25em;
+  transform: scale(0.65);
+}
+
+ul.list-check>li {
+  margin: 4px 0;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-control-active {
+  background-color: #3D7B3F !important;
+  color: #fff !important;
+  border: 0 !important;
+}
+
+.star {
+  content: url('../assets/star.svg');
+}
+
+.kartu{
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (height <= 700px){
+  .h-section {
+      min-height: 100vh;
+  }
+
+  .h-section-1 {
+      height: 100vh;
+  }
+}
+
+@media only screen and (height > 700px){
+  .h-section {
+      min-height: 700px;
+  }
+}
